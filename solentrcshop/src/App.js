@@ -7,7 +7,7 @@ import {BrowserRouter,Route, Routes} from 'react-router-dom';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
-import PgFOF from './Components/ PgFOF';
+import PgFOF from './Components/PgFOF'
 import Cart from './Components/Cart';
 import Profile from './Components/Profile';
 function App() {

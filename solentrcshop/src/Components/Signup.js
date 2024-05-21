@@ -2,11 +2,11 @@ import React,{useState} from "react";
 import Navbar from "./Navbar";
 import { Link} from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth, db} from "..FirebaseConfigs/FirebaseConfig";
+import {auth} from "../FirebaseConfigs/FirebaseConfig";
+import {db} from "../FirebaseConfigs/FirebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-//import { handle } from 'express/lib/application';
-
+import "./Signup.css"
 const Signup = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
