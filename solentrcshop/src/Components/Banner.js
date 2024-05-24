@@ -33,7 +33,7 @@ const Banner = () => {
         <img className="d-block w-100" src={slide4} alt="fourth slide" />
         <Carousel.Caption>
           <h3>Buy Genuine FRSky Transmitters</h3>
-          <p>BIG SALE</p>
+          <p>SPECIAL OFFER</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -4,12 +4,27 @@ nav {
   width: 100%;
   background-color: rgb(28, 8, 88);
   align-items: center;
+  justify-content: space-between;
 }
+.LeftContainer img {
+  width: 100px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
 nav button {
-  margin: 5px;
+  margin: 1px 5px;
   background-color: black;
   border: none;
   color: white;
+  padding: 5px;
+}
+nav button:hover {
+  background-color: white;
+  color: #ffbb00;
 }
 .cart-icon-css {
   color: white;
@@ -38,7 +53,22 @@ nav button {
   top: 3px;
   right: 8px;
 }
+.cart-icon-css:hover {
+  background-color: white;
+  color: rgb(33, 33, 33) cursor pointer;
+}
 profile-icon {
   width: 30px;
   padding-right: 10px;
+}
+
+.logout-btn {
+  background-color: rgb(255, 187, 0);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 10px;
+}
+.logout-btn:hover {
+  background-color: white;
+  color: rgb(255, 187, 0);
+  cursor: pointer;
 }

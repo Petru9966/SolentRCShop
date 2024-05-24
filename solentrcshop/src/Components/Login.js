@@ -32,7 +32,9 @@ export default function Login() {
 
       .catch((error) => {
         const errorCode = error.code;
+
         console.log(error.mesage);
+
         if (error.message === "Firebase: Error (auth/invalid-email).") {
           setErrorMsg("Please fill all required fields!");
         }
