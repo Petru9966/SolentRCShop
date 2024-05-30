@@ -4,11 +4,12 @@ import Products from "./Products";
 import Banner from "./Banner";
 import { auth, db } from "../FirebaseConfigs/FirebaseConfig";
 import { collection, doc, getDocs, query, where } from "firebase/firestore";
+import Addproduct from "./Addproduct";
 
 const Home = () => {
   function GetCurrentUser() {
     const [user, setUser] = useState("");
-    const usersColletionRef = collection(db, "users");
+    const usersCollectionRef = collection(db, "users");
 
     useEffect(() => {
       auth.onAuthStateChanged((userlogged) => {
@@ -40,6 +41,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Products />
+      <Addproduct />
       <p>{loggeduser ? loggeduser[0] : "No data"}</p>
     </div>
   );

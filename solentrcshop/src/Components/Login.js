@@ -31,17 +31,17 @@ export default function Login() {
       })
 
       .catch((error) => {
-        const errorCode = error.code;
+        //const errorCode = error.code;
 
         console.log(error.mesage);
 
-        if (error.message === "Firebase: Error (auth/invalid-email).") {
+        if (error.message == "Firebase: Error (auth/invalid-email).") {
           setErrorMsg("Please fill all required fields!");
         }
-        if (error.message === "Firebase: Error (auth/user-not-found).") {
+        if (error.message == "Firebase: Error (auth/user-not-found).") {
           setErrorMsg("Email not found");
         }
-        if (error.message === "Firebase: Error (auth/wrong-password).") {
+        if (error.message == "Firebase: Error (auth/wrong-password).") {
           setErrorMsg("Wrong Password");
         }
       });

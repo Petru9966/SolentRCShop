@@ -6,6 +6,7 @@ import profilelogo from "../Components/assets/profilelogo.jpg";
 import applogo from "../Components/assets/applogo.png";
 import { auth, db } from "../FirebaseConfigs/FirebaseConfig";
 import { collection, doc, getDocs, query, where } from "firebase/firestore";
+import Addproduct from "./Addproduct";
 
 const Navbar = () => {
   function GetCurrentUser() {
@@ -50,6 +51,7 @@ const Navbar = () => {
             <Link to="/">
               <button>Home</button>
             </Link>
+
             <Link to="/signup">
               <button>Register</button>
             </Link>
@@ -69,6 +71,16 @@ const Navbar = () => {
           <nav>
             <Link to="/">
               <button>Home</button>
+            </Link>
+            <Link to="/sellproduct">
+              <button>Sell</button>
+            </Link>
+            <div className="cart-btn">
+              <img src={cartlogo} alt="no img" />
+              <span className="cart-icon-css">0</span>
+            </div>
+            <Link to="userprofile">
+              <img src={profilelogo} className="profile-icon" />
             </Link>
             <button className="logout-btn" onClick={handleLogout}>
               Logout
