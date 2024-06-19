@@ -72,3 +72,24 @@ profile-icon {
   color: rgb(255, 187, 0);
   cursor: pointer;
 }
+
+.product-types {
+  background-color: #ffbb00;
+  display: flex;
+  justify-content: center;
+}
+
+.product-types button {
+  background-color: #ff7300;
+  padding: 0px 5px;
+  margin: 8px 15px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.product-types button:hover {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}

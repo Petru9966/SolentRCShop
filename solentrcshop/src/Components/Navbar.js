@@ -88,6 +88,25 @@ const Navbar = () => {
           </nav>
         )}
       </div>
+
+      <div className="product-types">
+        <a href="/product-type/kits">
+          {" "}
+          <button>Kits</button>
+        </a>
+        <a href="/product-type/rtf">
+          {" "}
+          <button>Ready to Fly</button>
+        </a>
+        <a href="/product-type/drones">
+          {" "}
+          <button>Drones</button>
+        </a>
+        <a href="/product-type/accessories">
+          {" "}
+          <button>Parts and Accessories</button>
+        </a>
+      </div>
     </div>
   );
 };
